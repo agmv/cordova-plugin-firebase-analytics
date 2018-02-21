@@ -33,6 +33,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <framework src="Firebase/Analytics" type="podspec" spec="~> 4.1"/>
         <framework src="AdSupport.framework" />
+               
+        <resource-file src="GoogleService-Info.plist" />
     </platform>
 
     <platform name="android">
@@ -55,6 +57,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <source-file src="src/android/FirebaseAnalyticsPlugin.java"
             target-dir="src/by/chemerisuk/cordova/firebase/" />
+               
+        <resource-file src="google-services.json" target="google-services.json" />
     </platform>
 
 </plugin>
