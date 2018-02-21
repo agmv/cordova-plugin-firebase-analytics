@@ -21,6 +21,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </engines>
 
     <platform name="ios">
+        <hook type="after_prepare" src="scripts/copy_google_services_config_files.js" />
+               
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
                 <param name="ios-package" value="FirebaseAnalyticsPlugin" />
@@ -38,6 +40,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform>
 
     <platform name="android">
+        <hook type="after_prepare" src="scripts/copy_google_services_config_files.js" />
+               
         <preference name="FIREBASE_VERSION" default="11.0.+"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
