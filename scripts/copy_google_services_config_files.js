@@ -30,7 +30,6 @@ var ANDROID_DIR = 'platforms/android';
 var PLATFORM = {
     IOS: {
         dest: [
-            IOS_DIR + '/GoogleService-Info.plist',
             IOS_DIR + '/' + name + '/Resources/GoogleService-Info.plist',
             IOS_DIR + '/' + name + '/Resources/Resources/GoogleService-Info.plist'
         ],
