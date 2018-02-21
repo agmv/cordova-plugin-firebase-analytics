@@ -34,7 +34,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <framework src="Firebase/Analytics" type="podspec" spec="~> 4.1"/>
         <framework src="AdSupport.framework" />
                
-        <resource-file src="GoogleService-Info.plist" />
+        <resource-file src="GoogleService-Info.plist" target="../../GoogleService-Info.plist"/>
     </platform>
 
     <platform name="android">
